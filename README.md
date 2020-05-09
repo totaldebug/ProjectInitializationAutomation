@@ -1,5 +1,7 @@
 # Project Initialization Automation
 
+Create a repo and project folder, then open up Visual Studio Code in the correct directory.
+
 ## Setup
 
 ```powershell
