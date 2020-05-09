@@ -1,6 +1,14 @@
 # Project Initialization Automation
 
-## pre-setup
+## Setup
+
+```powershell
+git clone "https://github.com/totaldebug/ProjectInitializerAutomation.git"
+cd ProjectInitializerAutomation
+pip install -r requirements.txt
+```
+
+### Environment Variables
 
 Right-click Computer, choose Properties or in Windows Control Panel, choose System.
 
@@ -14,24 +22,19 @@ Cick New to create a new environment variable.
 create env vars :
 > projects directory as - "mp"
 > Github tocken as      - "gt"
-```
-
-## Setup
-
-```bash
-git clone "https://github.com/totaldebug/ProjectInitializerAutomation.git"
-cd ProjectInitializerAutomation
-pip install -r requirements.txt
-
-path:
-"projectInitializerAutomation" add the folder directory to path
+> Add the path to the ProjectInitializerAutomation to PATH
 ```
 
 ### Usage
 
-```bash
-Command to run the program type
+Create Repo and local folder:
 
-'create <GitHub-User>/<project_name>'
-'create <GitHub-User>/<project_name> -Local' - just locally
+```powershell
+create -Type <org/user> -Project <GitHub-User>/<project_name>
+```
+
+Create local folder and init git:
+
+```powershell
+create -Type <org/user> -Project <GitHub-User>/<project_name> -Local
 ```
