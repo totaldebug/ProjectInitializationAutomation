@@ -1,6 +1,6 @@
 Function Create-Project{
     param(
-        [Parameter(Mandatory=$true)][ValidateSet('user','org')][string]$Type="user", 
+        [Parameter(Mandatory=$true)][ValidateSet('user','org')][string]$Type, 
         [Parameter(Mandatory=$true)][string]$Project, 
         [switch]$Local
     )

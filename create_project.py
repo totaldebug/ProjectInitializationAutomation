@@ -29,7 +29,7 @@ def orgRepo():
 
 def userRepo():
     user = g.get_user()
-    login = user.login
+    user.login
     try:
         user.get_repo(ProjectFolder)
     except:
