@@ -33,5 +33,5 @@ path:
 Command to run the program type
 
 'create <GitHub-User>/<project_name>'
-'create <GitHub-User>/<project_name> l' - just locally
+'create <GitHub-User>/<project_name> -Local' - just locally
 ```
